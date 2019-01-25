@@ -1141,7 +1141,7 @@
 
 								<i class="ace-icon fa fa-check green"></i>
 
-								Welcome to
+								Welcome to yuguygu
 								<strong class="green">
 									Ace
 									<small>(v1.4)</small>
