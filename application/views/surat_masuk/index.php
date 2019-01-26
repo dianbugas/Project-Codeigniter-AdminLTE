@@ -1,10 +1,4 @@
 <div class="cotainer">
-<ul class="list-group">
-                <?php foreach ($suratmasuk as $sum) : ?>
-                <li class="list-group-item"><?= $sum['dari']; ?>
-                </li>
-                <?php endforeach; ?>
-            </ul>
             <div class="row">
 									<div class="col-xs-12">
 										<div class="clearfix">
@@ -22,46 +16,33 @@
 																<span class="lbl"></span>
 															</label>
                             </th>
-                            <th class="center">
-															<label class="pos-rel">
-																<input type="checkbox" class="ace" />
-																<span class="lbl"></span>
-															</label>
+                            <th class="center">No</th>
+                            <th class="center">Status</th>
+														<th class="center">Nomor Surat</th>
+														<th class="center">Tanggal Surat</th>
+														<th class="hidden-480 center">Dari
+                           
+                                  
+                            
                             </th>
-														<th>Domain</th>
-														<th>Price</th>
-														<th class="hidden-480">Clicks</th>
 
-														<th>
+														<th class="center">
 															<i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i>
-															Update
-														</th>
-														<th class="hidden-480">Status</th>
-
-														<th></th>
+															Prihal
+                            </th>
+                            <th class="center">Cetak</th>
                           </tr>
-                       
-								
                         <tr>
 														<td class="center">
 															<label class="pos-rel">
 																<input type="checkbox" class="ace" />
 																<span class="lbl"></span>
 															</label>
+                            </td>
+                            <td>
+															<a href="#">1</a>
 														</td>
-
-														<td>
-															<a href="#">app.com</a>
-														</td>
-														<td>$45</td>
-														<td class="hidden-480">3,330</td>
-														<td>Feb 12</td>
-
-														<td class="hidden-480">
-															<span class="label label-sm label-warning">Expiring</span>
-														</td>
-
-														<td>
+                            <td>
 															<div class="hidden-sm hidden-xs action-buttons">
 																<a class="blue" href="#">
 																	<i class="ace-icon fa fa-search-plus bigger-130"></i>
@@ -110,8 +91,19 @@
 																</div>
 															</div>
 														</td>
+														
+														<td>$45</td>
+														<td class="hidden-480">3,330</td>
+													
+                            <?php foreach ($suratmasuk as $sum) : ?>
+                                  <td><?= $sum['dari']; ?>
+                                  </td>
+                                  <?php endforeach; ?>
+                           
+														<td class="hidden-480">
+															<span class="label label-sm label-warning">Expiring</span>
+														</td>
 													</tr>
-
 											</table>
 										</div>
 									</div>
