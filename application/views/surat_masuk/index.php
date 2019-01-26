@@ -92,7 +92,7 @@
 															</div>
 														</td>
 														
-														<td>$45</td>
+														<td>$45asdasd</td>
 														<td class="hidden-480">3,330</td>
 													
                             <?php foreach ($suratmasuk as $sum) : ?>
