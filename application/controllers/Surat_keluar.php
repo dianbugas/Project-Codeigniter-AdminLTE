@@ -38,4 +38,13 @@ class Surat_keluar extends CI_Controller
             redirect('surat_keluar');
         }
     }
+
+    public function detail($id)
+    {
+        $data['judul'] = 'Detail Data Surat Keluar';
+        $data['surat_keluar'] = $this->Surat_keluar_model->getSuratKeluarById($id);
+        $this->load->view('templates/header', $data);
+        $this->load->view('surat_keluar', $data);
+        $this->load->view('templates/footer');
+    }
 }

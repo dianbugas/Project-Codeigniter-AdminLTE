@@ -20,4 +20,9 @@ class Surat_keluar_model extends CI_Model
         ];
         $this->db->insert('surat_keluar', $data);
     }
+
+    public function getSuratKeluarById($id)
+    {
+        return $this->db->get_where('surat_keluar', ['id' => $id])->row_array();
+    }
 }
