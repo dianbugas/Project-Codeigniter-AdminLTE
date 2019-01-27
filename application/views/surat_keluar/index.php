@@ -12,14 +12,14 @@
                         <th class="center">Status</th>
 						<th class="center">Nomor Surat</th>
 						<th class="center">Tanggal Surat</th>
-						<th class="hidden-480 center">Dari</th>
+						<th class="hidden-480 center">Kepada</th>
 						<th class="center">
 							<i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i>
 								Prihal
                         </th>
                         <th class="center">Cetak</th>
 					</tr>
-					<?php foreach ($suratmasuk as $sum) : ?>
+					<?php foreach ($suratkeluar as $sum) : ?>
                     <tr>
                 		<td class="center">1</td>
                         <td class="center">
@@ -67,8 +67,8 @@
 						</td>
 						<td><?= $sum['nomor_surat']; ?></td>
 						<td class="hidden-480"><?= $sum['tanggal_surat']; ?></td>
-						<td><?= $sum['dari']; ?></td>
-                        <td><?= $sum['perihal']; ?></td>
+						<td><?= $sum['kepada']; ?></td>
+                        <td class="md-5"><?= $sum['perihal']; ?></td>
 						<td><?= $sum['surat']; ?></td>
 					</tr>
 					<?php endforeach; ?>
