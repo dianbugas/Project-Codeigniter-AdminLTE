@@ -8,8 +8,8 @@
 				<table id="dynamic-table" class="table table-drak table-bordered table-drak">
 					<tr>
 						
-                        <th class="center">No</th>
-                        <th class="center">Status</th>
+                        <th class="center" width="40px">No</th>
+                        <th class="center" width="90px">Status</th>
 						<th class="center">Nomor Surat</th>
 						<th class="center">Tanggal Surat</th>
 						<th class="hidden-480 center">Dari</th>
@@ -17,7 +17,7 @@
 							<i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i>
 								Prihal
                         </th>
-                        <th class="center">Cetak</th>
+                        <th class="center" width="100px">Cetak</th>
 					</tr>
 					<?php foreach ($suratmasuk as $sum) : ?>
                     <tr>

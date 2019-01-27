@@ -6,12 +6,12 @@
 			</div>
 			<div>
 				<table id="dynamic-table" class="table table-drak table-bordered table-drak">
-					<tr>
-						
-                        <th class="center">No</th>
-                        <th class="center">Status</th>
+					<tr>						
+                        <th class="center" width="40px">No</th>
+                        <th class="center" width="90px">Status</th>
 						<th class="center">Persetujuan</th>
-						<th class="center">Keterangan</th>
+                        <th class="center">Keterangan</th>
+                        <th class="center">Surat Keluar</th>
 					</tr>
 					<?php foreach ($verifikasi as $ver) : ?>
                     <tr>
