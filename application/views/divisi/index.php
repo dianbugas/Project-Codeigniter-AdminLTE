@@ -8,7 +8,7 @@
 				<table id="dynamic-table" class="table table-drak table-bordered table-drak">
 					<tr>
                         <th class="center" width="40px">No</th>
-                        <th class="center" width="100px">Status</th>
+                        <th class="center" width="90px">Status</th>
 						<th class="center">Divisi</th>
 						<th class="center">Nama</th>
 					</tr>
