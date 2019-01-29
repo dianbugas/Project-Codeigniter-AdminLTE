@@ -17,34 +17,34 @@ class Surat_keluar extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-    // public function tambah()
-    // {
-    //     $data['judul'] = 'Form Input Surat Kelur';
-    //     $this->form_validation->set_rules('nomor_surat', 'Nomor Surat', 'required');
-    //     $this->form_validation->set_rules('tanggal_surat', 'Tanggal Surat', 'required');
-    //     $this->form_validation->set_rules('dari', 'Dari');
-    //     $this->form_validation->set_rules('kepada', 'Kepada');
-    //     $this->form_validation->set_rules('perihal', 'Perihal');
-    //     $this->form_validation->set_rules('lampiran', 'Lampiran');
-    //     $this->form_validation->set_rules('surat', 'Surat');
-
-    //     if ($this->form_validation->run() == false) {
-    //         $this->load->view('templates/header', $data);
-    //         $this->load->view('surat_keluar/tambah');
-    //         $this->load->view('templates/footer');
-    //     } else {
-    //         $this->Surat_keluar_model->tambahDataSuratKeluar();
-    //         $this->session->set_flashdata('flash', 'Ditambahkan');
-    //         redirect('surat_keluar');
-    //     }
-    // }
-
-    public function detail($id)
+    public function tambah()
     {
-        $data['judul'] = 'Detail Data Surat Keluar';
-        $data['suratkeluar'] = $this->Surat_keluar_model->getSuratKeluarById($id);
-        $this->load->view('templates/header', $data);
-        $this->load->view('surat_keluar/detail', $data);
-        $this->load->view('templates/footer');
+        $data['judul'] = 'Form Input Surat Kelur';
+        $this->form_validation->set_rules('nomor_surat', 'Nomor Surat', 'required');
+        $this->form_validation->set_rules('tanggal_surat', 'Tanggal Surat', 'required');
+        $this->form_validation->set_rules('dari', 'Dari');
+        $this->form_validation->set_rules('kepada', 'Kepada');
+        $this->form_validation->set_rules('perihal', 'Perihal');
+        $this->form_validation->set_rules('lampiran', 'Lampiran');
+        $this->form_validation->set_rules('surat', 'Surat');
+
+        if ($this->form_validation->run() == false) {
+            $this->load->view('templates/header', $data);
+            $this->load->view('surat_keluar/tambah');
+            $this->load->view('templates/footer');
+        } else {
+            $this->Surat_keluar_model->tambahDataSuratKeluar();
+            $this->session->set_flashdata('flash', 'Ditambahkan');
+            redirect('surat_keluar');
+        }
     }
+
+    // public function detail($id)
+    // {
+    //     $data['judul'] = 'Detail Data Surat Keluar';
+    //     $data['suratkeluar'] = $this->Surat_keluar_model->getSuratKeluarById($id);
+    //     $this->load->view('templates/header', $data);
+    //     $this->load->view('surat_keluar/detail', $data);
+    //     $this->load->view('templates/footer');
+    // }
 }

@@ -1,4 +1,14 @@
 <div class="cotainer">
+	<div class="hr hr-dotted hr-16"></div>
+	<div class="row-mt-3">
+		<div class="col-md-3">
+			<button class="btn btn-sm btn-primary">
+				<i class="ace-icon fa fa-pencil align-top bigger-125"></i>
+					Primary
+			</button>
+		</div> 
+	</div>
+
     <div class="row">
 		<div class="col-xs-12">
 			<div class="clearfix">
