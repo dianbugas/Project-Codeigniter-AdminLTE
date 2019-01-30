@@ -1,11 +1,8 @@
 <div class="cotainer">
 	<div class="hr hr-dotted hr-16"></div>
 	<div class="row-mt-3">
-		<div class="col-md-3">
-			<button class="btn btn-sm btn-primary">
-				<i class="ace-icon fa fa-pencil align-top bigger-125"></i>
-					Primary
-			</button>
+		<div class="col-md-3">		
+            <a href="<?= base_url(); ?>surat_keluar/tambah" class="btn fa fa-pencil btn-primary">_Tambah Data</a>     
 		</div> 
 	</div>
 
@@ -29,9 +26,11 @@
                         </th>
                         <th class="center" width="100px">Cetak</th>
 					</tr>
-					<?php foreach ($suratkeluar as $sum) : ?>
+					<?php 
+				$no = 1;
+				foreach ($suratkeluar as $sum) : ?>
                     <tr>
-                		<td class="center">1</td>
+                		<td class="center"><?= $no++; ?></td>
                         <td class="center">
 							<div class="hidden-sm hidden-xs action-buttons">
 								<a class="blue" href="#">

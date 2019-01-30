@@ -13,9 +13,11 @@
                         <th class="center">Keterangan</th>
                         <th class="center">Surat Keluar</th>
 					</tr>
-					<?php foreach ($verifikasi as $ver) : ?>
+					<?php 
+				$no = 1;
+				foreach ($verifikasi as $ver) : ?>
                     <tr>
-                		<td class="center">1</td>
+                		<td class="center"><?= $no++; ?></td>
                         <td class="center">
 							<div class="hidden-sm hidden-xs action-buttons">
 								<a class="blue" href="#">

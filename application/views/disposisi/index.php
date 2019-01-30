@@ -13,9 +13,11 @@
                         <th class="center">Keterangan</th>
 						<th class="center">Surat Masuk</th>
 					</tr>
-					<?php foreach ($disposisi as $dis) : ?>
+					<?php 
+				$no = 1;
+				foreach ($disposisi as $dis) : ?>
                     <tr>
-                		<td class="center">1</td>
+                		<td class="center"><?= $no++; ?></td>
                         <td class="center">
 							<div class="hidden-sm hidden-xs action-buttons">
 								<a class="blue" href="#">

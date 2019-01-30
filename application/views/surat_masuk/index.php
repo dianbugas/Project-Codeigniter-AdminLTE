@@ -19,9 +19,11 @@
                         </th>
                         <th class="center" width="100px">Cetak</th>
 					</tr>
-					<?php foreach ($suratmasuk as $sum) : ?>
+					<?php
+				$no = 1;
+				foreach ($suratmasuk as $sum) : ?>
                     <tr>
-                		<td class="center">1</td>
+                		<td class="center"><?= $no++; ?></td>
                         <td class="center">
 							<div class="hidden-sm hidden-xs action-buttons">
 								<a class="blue" href="#">

@@ -12,9 +12,11 @@
 						<th class="center">Divisi</th>
 						<th class="center">Nama</th>
 					</tr>
-					<?php foreach ($divisi as $div) : ?>
+					<?php 
+				$no = 1;
+				foreach ($divisi as $div) : ?>
                     <tr>
-                		<td class="center">1</td>
+                		<td class="center"><?= $no++; ?></td>
                         <td class="center">
 							<div class="hidden-sm hidden-xs action-buttons">
 								<a class="blue" href="#">
