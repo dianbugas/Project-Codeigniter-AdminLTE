@@ -3,9 +3,9 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header">
-                        Form Tambah Data Surat Masuk
+                        Form Tambah Data Surat keluar
                     </div>
-                    <div class="card-body">
+                    <div class="card-body"> 
                         <?php if (validation_errors()) : ?>
                         <div class="alert alert-danger" role="alert">
                             <?= validation_errors(); ?>

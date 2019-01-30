@@ -18,7 +18,7 @@ class Surat_keluar_model extends CI_Model
             "keterangan" => $this->input->post('keterangan', true),
             "surat" => $this->input->post('surat', true)
         ];
-        $this->db->insert('surat_keluar', $data);
+        $this->db->insert('suratkeluar', $data);
     }
 
     public function getSuratKeluarById($id)

@@ -35,7 +35,7 @@ class Surat_keluar extends CI_Controller
         } else {
             $this->Surat_keluar_model->tambahDataSuratKeluar();
             $this->session->set_flashdata('flash', 'Ditambahkan');
-            redirect('surat_keluar');
+            redirect('suratkeluar');
         }
     }
 
